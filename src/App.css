@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: #dee2e9;
+}
+.App {
+  background-color: #fff;
+  margin: 0px auto;
+}
+.empty-list {
+  height: 100px;
+}
