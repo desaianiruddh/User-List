@@ -1,0 +1,140 @@
+.user-list {
+  height: 595px;
+}
+th {
+  color: #4d4d55;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 50px 10px 50px;
+  text-align: left;
+}
+td {
+  padding: 20px 50px;
+}
+.owner-status {
+  color: #6ccaa2;
+  font-weight: bold;
+}
+.owner-access {
+  color: #4d4d55;
+  font-weight: bold;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.emp-name {
+  font-size: 18px;
+  color: #4d4d55;
+  font-weight: bold;
+}
+.emp-mail {
+  font-size: 15px;
+  color: #848387;
+}
+select {
+  width: 100px;
+  height: 30px;
+  color: #4d4d55;
+  font-size: 15px;
+  background-color: #f8fafb;
+  padding: 5px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+.profile-icon {
+  width: 15px;
+  height: 20px;
+  margin: 0px 20px;
+}
+nav {
+  height: 40px;
+}
+.pagination {
+  height: 10px;
+}
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #6ccaa2;
+  border: 1px solid #000000;
+  font-weight: bold;
+}
+@media only screen and (max-width: 992px) {
+  .user-list {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    margin: auto auto;
+  }
+  table {
+    width: 550px;
+  }
+  table,
+  tr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  /* Hide table headers */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr:nth-child(even) {
+    border-bottom: 1px solid #dadada;
+    border-right: 5px solid #dadada;
+  }
+  tr:nth-child(odd) {
+    border-bottom: 1px solid #dadada;
+    border-left: 5px solid #dadada;
+  }
+  td:first-child,
+  th:first-child {
+    padding: 10px 150px;
+  }
+  td:nth-child(2),
+  td:nth-child(3) {
+    padding-top: 0px;
+  }
+  td:nth-child(4) {
+    padding: 0px 30px;
+  }
+  .emp-status,
+  .emp-access {
+    padding: 20px 15px;
+  }
+  .owner-access,
+  .owner-status {
+    font-size: 15px;
+    padding: 20px 30px;
+  }
+  .emp-name {
+    font-size: 15px;
+  }
+  .emp-mail {
+    font-size: 12px;
+  }
+  .profile-icon {
+    width: 12px;
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+  select {
+    width: 80px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .user-list {
+    margin-top: 5px;
+  }
+  td:first-child {
+    padding-top: 20px;
+  }
+}
